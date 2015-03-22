@@ -4,7 +4,7 @@
  * 
  * @package Lanyon
  * @author Vincent Lau
- * @version 1.0
+ * @version 1.1
  * @link http://tfp.io
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
