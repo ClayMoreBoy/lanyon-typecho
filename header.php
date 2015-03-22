@@ -46,6 +46,10 @@
 				<a class="sidebar-nav-item" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
 				<?php endwhile; ?>
   		</nav>
+    		<br />
+  		<nav class="sidebar-nav side-bar-links">
+  		  <?php  Links_Plugin::output($pattern='<a class="sidebar-nav-item" href="{url}" title="{title}" target="_blank">{name}</a>', $links_num=0, $sort=NULL);?>
+  		</nav>
   		
   		<div class="sidebar-item">
   			<p>
