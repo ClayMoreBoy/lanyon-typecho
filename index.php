@@ -12,7 +12,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
   ?>
 
   <?php while($this->next()): ?>
-  <article class="post-class">
+  <article class="post">
       <header class="post-header">
           <h1 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
           <section class="post-meta">
