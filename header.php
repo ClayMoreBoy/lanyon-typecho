@@ -30,8 +30,8 @@
     <?php $this->header(); ?>
   </head>
   
-  <body class="body=class">
-  	<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+  <body class="body-class<?php if ($this->options->themeStyle): ?> theme-base-<?php $this->options->themeStyle(); ?><?php endif; ?><?php if (in_array(!empty($this->options->themelayout) && '1', $this->options->themelayout)): ?> layout-reverse<?php endif; ?><?php if (!empty($this->options->themelayout) && in_array('2', $this->options->themelayout)): ?> sidebar-overlay<?php endif; ?>">
+  	<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"<?php if (!empty($this->options->themelayout) && in_array('3', $this->options->themelayout)): ?> checked<?php endif; ?> />
   	
   	<!-- Toggleable sidebar -->
   	<div class="sidebar" id="sidebar">
@@ -46,10 +46,13 @@
 				<a class="sidebar-nav-item" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
 				<?php endwhile; ?>
   		</nav>
-    		<br />
+  		
+  		<?php if ($this->options->linksSupport): ?>
+  		<br />
   		<nav class="sidebar-nav side-bar-links">
   		  <?php  Links_Plugin::output($pattern='<a class="sidebar-nav-item" href="{url}" title="{title}" target="_blank">{name}</a>', $links_num=0, $sort=NULL);?>
   		</nav>
+  		<?php endif; ?>
   		
   		<div class="sidebar-item">
   			<p>
