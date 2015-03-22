@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/syntax.css'); ?>" />
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/lanyon.css'); ?>" />
     
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('google/front/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400'); ?>" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('google/front/google.css?family=PT+Serif:400,400italic,700%7CPT+Sans:400'); ?>" />
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php $this->options->themeUrl('apple-touch-icon-precomposed.png'); ?>">
     <link rel="shortcut icon" href="<?php $this->options->themeUrl('favicon.ico'); ?>" />
