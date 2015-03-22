@@ -1,6 +1,6 @@
 # Lanyon for Typecho
 
-[Lanyon](https://github.com/poole/lanyon) is a theme built by [mdo](https://github.com/mdo) for [Jekyll](http://jekyllrb.com/). This repository is a conversion of that theme to work with [Typecho](https://typecho.org/).
+[Lanyon](https://github.com/poole/lanyon) is a theme built by [mdo](https://github.com/mdo) for [Jekyll](http://jekyllrb.com/). This repository is a conversion of that theme to work with [Typecho](http://typecho.org/).
 
 ### 在Typecho 1.0版本测试通过
 
