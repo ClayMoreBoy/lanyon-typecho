@@ -42,6 +42,9 @@
   		<nav class="sidebar-nav">
   			<a class="sidebar-nav-item" href="<?php $this->options->siteUrl(); ?>">Home</a>
   			<?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+				<?php while($pages->next()): ?>
+				<a class="sidebar-nav-item" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
+				<?php endwhile; ?>
   		</nav>
   		
   		<div class="sidebar-item">

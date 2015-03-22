@@ -22,7 +22,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
           </section>
       </header>
       <section class="post-excerpt">
-          <?php $this->content('&raquo;'); ?>
+          <?php $this->excerpt(500,' &raquo;'); ?>
       </section>
   </article>
 	<?php endwhile; ?>  
@@ -30,7 +30,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 </div>
 	
   <nav class="pagination" role="navigation">
-		<?php $this->pageNav('&larr; Newer Posts', 'Older Posts &rarr;'); ?>
+  	<?php $this->pageLink('&larr; Newer Posts','prev'); ?>
+    <?php $this->pageLink('Older Posts &rarr;','next'); ?>
   </nav>
   
 <?php $this->need('footer.php'); ?>
